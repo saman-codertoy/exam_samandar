@@ -1,0 +1,33 @@
+@mixin siteContainer {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.container {
+  @include siteContainer();
+}
+
+@mixin siteButton {
+  background: linear-gradient(180deg, #64BB47 0%, #2C9553 100%);
+  color: #fff;
+  padding: 11px 41px;
+  border-radius: 50px;
+}
+
+.btn {
+  @include siteButton;
+}
+
+@mixin oneoftheButton {
+  background-color: #444;
+  color: #fff;
+  padding: 16px 41px;
+  border-radius: 50px;
+
+}
+
+.btn__danger {
+  @include oneoftheButton();
+}
